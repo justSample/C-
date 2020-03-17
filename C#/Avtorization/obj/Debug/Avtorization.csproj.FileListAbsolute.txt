@@ -1,0 +1,12 @@
+D:\колледж\C#\Avtorization\bin\Debug\Avtorization.exe.config
+D:\колледж\C#\Avtorization\bin\Debug\Avtorization.exe
+D:\колледж\C#\Avtorization\bin\Debug\Avtorization.pdb
+D:\колледж\C#\Avtorization\obj\Debug\Avtorization.csprojAssemblyReference.cache
+D:\колледж\C#\Avtorization\obj\Debug\Avtorization.Properties.Resources.resources
+D:\колледж\C#\Avtorization\obj\Debug\Avtorization.csproj.GenerateResource.cache
+D:\колледж\C#\Avtorization\obj\Debug\Avtorization.exe
+D:\колледж\C#\Avtorization\obj\Debug\Avtorization.pdb
+D:\колледж\C#\Avtorization\obj\Debug\Avtorization.Form1.resources
+D:\колледж\C#\Avtorization\obj\Debug\Avtorization.Form2.resources
+D:\колледж\C#\Avtorization\obj\Debug\Avtorization.Form3.resources
+D:\колледж\C#\Avtorization\obj\Debug\Avtorization.Form4.resources
