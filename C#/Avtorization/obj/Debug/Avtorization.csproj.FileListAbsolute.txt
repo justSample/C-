@@ -10,3 +10,16 @@ D:\колледж\C#\Avtorization\obj\Debug\Avtorization.Form1.resources
 D:\колледж\C#\Avtorization\obj\Debug\Avtorization.Form2.resources
 D:\колледж\C#\Avtorization\obj\Debug\Avtorization.Form3.resources
 D:\колледж\C#\Avtorization\obj\Debug\Avtorization.Form4.resources
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\bin\Debug\Avtorization.exe.config
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\bin\Debug\Avtorization.exe
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\bin\Debug\Avtorization.pdb
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.csprojAssemblyReference.cache
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.Form1.resources
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.Form2.resources
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.Form3.resources
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.Form4.resources
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.Properties.Resources.resources
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.csproj.GenerateResource.cache
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.csproj.CoreCompileInputs.cache
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.exe
+C:\Users\Just_Sample\Desktop\C-\C#\Avtorization\obj\Debug\Avtorization.pdb

@@ -9,49 +9,69 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Text.RegularExpressions;
+using static Avtorization.Form2;
 
 namespace Avtorization
 {
     public partial class Form3 : Form
     {
+        private string PathToTxt = AppDomain.CurrentDomain.BaseDirectory;
+        private string TxtName = "LoginAndPasswords.txt";
+
+        private const string USERNAMEBEGIN = "Логин: ";
+        private const string USERPASSWORDBEGIN = "Пароль: ";
+
         public Form3()
         {
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            using (StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "1.txt", System.Text.Encoding.Default))
+            StreamReader sr = new StreamReader(PathToTxt + TxtName, Encoding.Default);
+
+            string line = String.Empty;
+            string userName = String.Empty;
+            string userPassword = String.Empty;
+
+            List<User> listUsers = new List<User>();
+
+            while ((line = sr.ReadLine()) != null)
             {
-                string line;
-                bool if_login = false;
-                while ((line = sr.ReadLine()) != null)
+                if (String.IsNullOrEmpty(userName))
                 {
-                    if (if_login == true)
-                    {
-                        if (line == "Пароль: " + textBox2.Text)
-                        {
-                            Form4 HelloForm = new Form4();
-                            HelloForm.ShowDialog();
-                            break;
-                        } else { if_login = false; }
-                    }
-                    if (line == "Логин: " + textBox1.Text)
-                    {
-                        if_login = true;
-                    } 
+                    userName = line.Substring(USERNAMEBEGIN.Length);
                 }
-                if (if_login == false)
+                else if(String.IsNullOrEmpty(userPassword))
                 {
-                    MessageBox.Show("Пользователь не найден!!!");
+                    userPassword = line.Substring(USERPASSWORDBEGIN.Length);
+
+                    listUsers.Add(new User(userName, userPassword));
+
+                    userName = String.Empty;
+                    userPassword = String.Empty;
+                }
+
+            }
+
+            bool isLoginFound = false;
+
+            for(int i = 0;i < listUsers.Count ;i++ )
+            {
+                if (box_Login.Text.Equals(listUsers[i].Login) && box_Password.Text.Equals(listUsers[i].Password))
+                {
+                    isLoginFound = true;
+                    Form4 HelloForm = new Form4();
+                    HelloForm.ShowDialog();
+                    break;
                 }
             }
 
+            if (!isLoginFound)
+            {
+                MessageBox.Show("Вы ввели логин или пароль неправильно!","Ошибка",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

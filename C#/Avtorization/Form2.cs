@@ -13,6 +13,9 @@ namespace Avtorization
 {
     public partial class Form2 : Form
     {
+        private string nameTxt = "LoginAndPasswords.txt";
+        private string txtPath = AppDomain.CurrentDomain.BaseDirectory;
+
         public Form2()
         {
             InitializeComponent();
@@ -20,12 +23,13 @@ namespace Avtorization
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "1.txt", true, System.Text.Encoding.Default))
-            {
-                sw.WriteLine("Логин: "+textBox1.Text);
-                sw.WriteLine("Пароль: " + textBox2.Text);
-                sw.Close();
-            }
+            StreamWriter sw = new StreamWriter(txtPath + nameTxt, true, Encoding.Default);
+
+            sw.AutoFlush = true;
+            sw.WriteLine("Логин: "  + textBox1.Text);
+            sw.WriteLine("Пароль: " + textBox2.Text);
+            sw.Close();
+
             Close();
 
         }

@@ -28,5 +28,10 @@ namespace Avtorization
             Form3 Registration = new Form3();
             Registration.ShowDialog();
         }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
